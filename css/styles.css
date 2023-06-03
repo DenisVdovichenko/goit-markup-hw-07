@@ -65,6 +65,22 @@ img {
   text-decoration: none;
 }
 
+/* reset end */
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* header */
 
 .header-container {
@@ -169,9 +185,12 @@ img {
   font-style: normal;
 }
 
+@media screen (min-width: 320px) {
+}
+
 /* main */
 
-.section-portfolio {
+/* .section-portfolio {
   padding: 96px 0 120px;
 }
 
@@ -436,27 +455,11 @@ img {
   background-color: var(--light-mode);
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-/* reset end */
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.container-position {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+} */
 
 /*Team section */
 
-.team-list {
+/* .team-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -487,7 +490,7 @@ img {
 
 .decor-team-icon {
   fill: var(--light-mode);
-}
+} */
 
 /* Customers section */
 
@@ -869,12 +872,12 @@ img {
   fill: transparent;
   /* transition: background-color var(--fast-anim) border var(--fast-anim) fill
     var(--fast-anim); */
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+/* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.link-policy {
+/* .link-policy {
   color: var(--accent-text);
 }
 

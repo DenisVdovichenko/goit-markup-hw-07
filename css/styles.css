@@ -491,7 +491,7 @@ img {
 
 /* Customers section */
 
-.custom-title {
+/* .custom-title {
   line-height: var(--caption);
 }
 
@@ -527,11 +527,11 @@ img {
 
 .decoration-icon {
   fill: currentColor;
-}
+} */
 
 /* Footer section */
 
-.footer-color {
+/* .footer-color {
   background-color: var(--title-text);
   padding: 100px 0;
 }
@@ -676,11 +676,11 @@ img {
 .form-footer {
   display: flex;
   gap: 24px;
-}
+} */
 
 /* Modal style */
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -917,4 +917,4 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-text);
   transition: background-color var(--fast-anim);
-}
+} */

@@ -646,10 +646,6 @@ img {
   margin-left: 80px;
 }
 
-.footer-lab {
-  /* margin-right: 24px; */
-}
-
 .footer-ipt {
   padding: 8px 16px;
   width: 264px;
@@ -793,9 +789,6 @@ img {
   transition: fill var(--fast-anim);
 }
 
-.modal-form {
-}
-
 .for-form {
   display: block;
   font-size: 12px;
@@ -867,6 +860,7 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  vertical-align: sub;
 
   width: 16px;
   height: 16px;
@@ -889,6 +883,16 @@ img {
   border: none;
   fill: var(--primary-white-color);
   border-color: var(--pressed-state);
+}
+
+.input-check:focus + .accept-policy > .policy-wrapper {
+  border: 1px solid var(--pressed-state);
+}
+
+.link-policy:focus {
+  border: 1px solid var(--pressed-state);
+  border-radius: 2px;
+  outline: none;
 }
 
 .send-button {

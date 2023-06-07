@@ -96,11 +96,11 @@ img {
 
   color: var(--primary-text-color);
 }
-/* .header-container {
+.header-container {
   display: flex;
   align-items: center;
   margin-bottom: 96px;
-} */
+}
 
 .adress-list {
   display: flex;
@@ -191,6 +191,7 @@ img {
     display: flex;
     align-items: center;
     margin-right: auto;
+    justify-content: space-between;
   }
 
   .header-list {
@@ -203,7 +204,6 @@ img {
   .logo-header {
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-right: 76px;
 
     color: var(--accent-text);
     font-family: "Raleway", sans-serif;
@@ -237,6 +237,10 @@ img {
 @media screen (min-width: 1158px) {
   .container {
     max-width: 1440px;
+  }
+
+  .logo-header {
+    margin-right: 76px;
   }
 }
 

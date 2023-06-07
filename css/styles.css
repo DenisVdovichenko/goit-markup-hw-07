@@ -87,21 +87,6 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.adr {
-  transition: color var(--fast-anim);
-
-  display: block;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
-  color: var(--primary-text-color);
-}
-.header-container {
-  display: flex;
-  align-items: center;
-  margin-bottom: 96px;
-}
-
 .header-list {
   display: flex;
   flex-direction: row;
@@ -150,10 +135,6 @@ img {
   color: var(--title-text);
 }
 
-.normalize {
-  font-style: normal;
-}
-
 /* header  */
 
 @media screen and (min-width: 320px) {
@@ -163,10 +144,6 @@ img {
 }
 
 @media screen and (min-width: 428px) {
-  .header-container {
-    align-items: center;
-  }
-
   .container {
     display: flex;
     align-content: center;
@@ -174,12 +151,6 @@ img {
     margin: 0 auto;
     padding: 0 16px;
     justify-content: space-between;
-  }
-
-  .header-nav {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
   }
 
   .logo-header {
@@ -232,6 +203,10 @@ img {
     display: none;
   }
 
+  .normalize {
+    font-style: normal;
+  }
+
   .adress-list {
     display: flex;
     flex-direction: column;
@@ -249,6 +224,12 @@ img {
 
     color: var(--primary-text-color);
   }
+
+  .acent-headline:hover,
+  .acent-headline:focus {
+    color: var(--primary-white-color);
+    background-color: var(--pressed-state);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -256,9 +237,16 @@ img {
     max-width: 1440px;
   }
 
+  .header-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 96px;
+  }
+
   .adress-list {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 40px;
     letter-spacing: 0.02em;
   }
@@ -270,6 +258,12 @@ img {
   .adr {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
   }
 }
 
@@ -502,12 +496,6 @@ img {
 .accent:hover,
 .accent:focus {
   color: var(--pressed-state);
-}
-
-.acent-headline:hover,
-.acent-headline:focus {
-  color: var(--primary-white-color);
-  background-color: var(--pressed-state);
 }
 
 .title-secondary {

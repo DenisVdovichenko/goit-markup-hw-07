@@ -183,7 +183,7 @@ img {
     justify-content: baseline;
     width: 428px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
     justify-content: space-between;
   }
 
@@ -194,16 +194,10 @@ img {
     justify-content: space-between;
   }
 
-  .header-list {
-    display: none;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 40px;
-  }
-
   .logo-header {
     padding-top: 24px;
     padding-bottom: 24px;
+    margin-right: 248px;
 
     color: var(--accent-text);
     font-family: "Raleway", sans-serif;
@@ -228,9 +222,30 @@ img {
   }
 }
 
+@media screen (min-width: 320px) and (max-width: 767px) {
+  .header-list > .header-title {
+    display: none;
+  }
+}
+
 @media screen (min-width: 768px) {
   .container {
     width: 768px;
+  }
+
+  .logo-header {
+    margin-right: 120px;
+  }
+
+  .header-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .burger-btn {
+    display: none;
   }
 }
 

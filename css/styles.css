@@ -141,9 +141,7 @@ img {
   body {
     overflow-x: hidden;
   }
-}
 
-@media screen and (min-width: 428px) {
   .container {
     display: flex;
     align-content: center;
@@ -185,11 +183,16 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
-
   .logo-header {
     margin-right: 120px;
   }
@@ -197,6 +200,7 @@ img {
   .header-list {
     display: flex;
     margin-right: 122px;
+    wrap: nowrap;
   }
 
   .burger-btn {

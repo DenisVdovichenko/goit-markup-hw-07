@@ -273,7 +273,7 @@ img {
 
 /* main */
 
-/* .section-portfolio {
+.section-portfolio {
   padding: 96px 0 120px;
 }
 
@@ -532,7 +532,24 @@ img {
   background-color: var(--light-mode);
   border-radius: 4px;
   margin-bottom: 8px;
+}
+
+/* @media screen and (min-width: 428px) and (max-width: 767px) {
+  .group-list {
+  }
 } */
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .group-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .card-list-item {
+    flex-basis: calc((100%-var(--indent)) / 2);
+  }
+}
 
 /*Team section */
 

@@ -18,6 +18,8 @@
   --indent: 24px;
   --items: 3;
 
+  --items2: 2;
+
   --caption: 1.1em;
 
   /* Modal */
@@ -37,6 +39,8 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+
+  height: 100vh;
 }
 
 /* reset start */
@@ -141,9 +145,6 @@ img {
     overflow-x: hidden;
   }
 
-  .burger-btn {
-  }
-
   .container {
     max-width: 428px;
     margin: 0 auto;
@@ -154,7 +155,6 @@ img {
   .logo-header {
     padding-top: 24px;
     padding-bottom: 24px;
-    margin-right: 248px;
 
     color: var(--accent-text);
     font-family: "Raleway", sans-serif;
@@ -183,19 +183,20 @@ img {
   }
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container {
-    width: 768px;
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .header-nav {
+    display: flex;
   }
-} */
+
+  .logo-header {
+    display: inline-block;
+    margin-right: 120px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-  }
-
-  .logo-header {
-    margin-right: 120px;
   }
 
   .header-list {
@@ -468,11 +469,12 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office-desktop.jpg");
-  max-width: 1440px;
+    url("../images/Dark-bg-mob.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  /* min-height: 432px; */
+  /* max-width: 767px; */
   margin: 0 auto;
   padding: 188px 0;
 }
@@ -481,17 +483,69 @@ img {
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-hd-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Dark-bg-mob@2x.jpg");
+    /* max-width: 767px; */
+  }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+/* 768-1157px */
+@media screen and (min-width: 768px) {
+  .section-hd-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Dark-bg-tablet.jpg");
+    /* min-height: 436px;
+    max-width: 1157px; */
+  }
+}
+
+/* 768-1157px 2x */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-hd-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/Dark-bg-tablet@2x.jpg");
+    /* min-height: 436px;
+    max-width: 1157px; */
+  }
+}
+
+/* 1158px */
+@media screen and (min-width: 1158px) {
+  .section-hd-color {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/people-office-desktop.jpg");
+    /* min-height: 600px;
+    max-width: 1440px; */
+  }
+}
+
+/* 1158px 2x */
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+  screen and (min-resolution: 192dpi) and (min-width: 1158px),
+  screen and (min-resolution: 2dppx) and (min-width: 1158px) {
   .section-hd-color {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office-desktop@2x.jpg");
+    /* min-height: 600px;
+    max-width: 1440px; */
   }
 }
 
@@ -567,7 +621,7 @@ img {
   }
 
   .card-list-item {
-    flex-basis: calc((100%-var(--indent)) / 2);
+    width: calc((100% - var(--indent) * (var(--items2) - 1)) / var(--items2));
   }
 }
 

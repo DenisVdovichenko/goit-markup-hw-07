@@ -644,7 +644,7 @@ img {
 
 /* <!-- Team section --> */
 
-/* .team-list {
+.team-list {
   display: flex;
   justify-content: center;
   gap: 24px;
@@ -675,7 +675,13 @@ img {
 
 .decor-team-icon {
   fill: var(--light-mode);
-} */
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    display: flex;
+    justify-content: center;
+}
 
 /* Customers section */
 

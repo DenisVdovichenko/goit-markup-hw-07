@@ -685,11 +685,13 @@ img {
   .card-set-adv-about {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--indent);
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .card-set-adv-about {
+    gap: var(--indentwo);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1157px) {
@@ -698,7 +700,10 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .card-set-adv-about.crew {
+    max-width: 552px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -751,7 +756,7 @@ img {
 
 /* Footer section */
 
-/* .footer-color {
+.footer-color {
   background-color: var(--title-text);
   padding: 100px 0;
 }
@@ -896,20 +901,20 @@ img {
 .form-footer {
   display: flex;
   gap: 24px;
-} */
+}
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .footer-container {
-    width: 584px;
-    align-items: flex-start;
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .container.all-footer {
+    max-width: 584px;
+    flex-wrap: wrap;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
   }
-} */
+}
 
 /* Modal style */
 

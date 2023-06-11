@@ -720,11 +720,6 @@ img {
   line-height: var(--caption);
 }
 
-.custom-item {
-  width: calc((100% - 120px) / 6);
-  height: 88px;
-}
-
 .custom-link {
   width: 100%;
   height: 100%;
@@ -751,14 +746,39 @@ img {
 @media screen and (min-width: 320px) {
   .custom-list {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .custom-list {
+    max-width: 396px;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 24px;
+    gap: 16px;
+  }
+
+  .custom-item {
+    width: 188px;
+    height: 88px;
+    margin-bottom: 56px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .custom-list {
     max-width: 552px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .custom-item {
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+  }
+
+  .custom-list {
+    gap: 24px;
+    flex-flow: row nowrap;
   }
 }
 
@@ -798,11 +818,6 @@ img {
 
 .logo-down {
   color: var(--light-mode);
-}
-
-.all-footer {
-  display: flex;
-  align-items: baseline;
 }
 
 .logo-part {
@@ -905,6 +920,10 @@ img {
   gap: 24px;
 }
 
+.container {
+  border: 1px solid orange;
+}
+
 @media screen and (min-width: 320px) {
   .logo-part {
     margin-right: 24px;
@@ -914,24 +933,44 @@ img {
   .form-footer-email {
     align-items: center;
   }
+
+  .footer-container {
+    margin: 0 auto;
+    padding: 0 16px;
+    max-width: 428px;
+  }
+
+  .all-footer {
+  }
+}
+
+@media screen (min-width: 320px) and (max-width: 1157px) {
+  .all-footer {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .container.all-footer {
+  .footer-container {
     max-width: 584px;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .logo-part {
     margin-right: 120px;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+
+  .all-footer {
+    align-items: baseline;
+    justify-content: center;
   }
 
   .form-footer-email {

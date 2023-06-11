@@ -72,7 +72,6 @@ img {
 /* reset end */
 
 .container {
-  width: 1158px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
@@ -241,7 +240,7 @@ img {
 
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+  max-width: 1158px;
   }
 
   .adress-list {

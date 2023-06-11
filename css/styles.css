@@ -558,7 +558,7 @@ img {
 /* <!-- Advantages section --> */
 
 @media screen and (min-width: 320px) {
-  .title-secondary {
+  .title-secondary.bolt {
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -586,7 +586,7 @@ img {
     --items: 4;
   }
 
-  .title-secondary {
+  .title-secondary.bolt {
     text-align: left;
   }
 }
@@ -690,9 +690,6 @@ img {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .card-set-adv-about {
-    justify-content: center;
-  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1157px) {

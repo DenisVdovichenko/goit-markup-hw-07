@@ -746,6 +746,9 @@ img {
 @media screen and (min-width: 320px) {
   .custom-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
   }
 }
 
@@ -753,13 +756,15 @@ img {
   .custom-list {
     max-width: 396px;
     flex-wrap: wrap;
-    align-items: center;
     gap: 16px;
+    justify-content: center;
   }
 
   .custom-item {
-    width: 188px;
-    height: 88px;
+    /* width: 188px;
+    height: 88px; */
+    max-width: 100%;
+    height: auto;
     margin-bottom: 56px;
   }
 }
@@ -918,10 +923,6 @@ img {
 .form-footer {
   display: flex;
   gap: 24px;
-}
-
-.container {
-  border: 1px solid orange;
 }
 
 @media screen and (min-width: 320px) {

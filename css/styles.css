@@ -941,7 +941,12 @@ img {
     text-align: left;
   }
 
+  .foorm-footer-email {
+  }
+
   .footer-ipt {
+    max-width: 100%;
+    margin-bottom: 16px;
   }
 }
 
@@ -957,12 +962,17 @@ img {
     gap: 24px;
   }
 
+  .footer-ipt {
+    margin-bottom: 0;
+  }
+
   .all-footer {
     gap: 0;
     justify-content: flex-start;
   }
 
   .logo-part {
+    text-align: left;
     margin-right: 24px;
     margin-bottom: 72px;
   }

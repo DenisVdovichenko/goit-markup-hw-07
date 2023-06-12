@@ -818,10 +818,6 @@ img {
   text-transform: uppercase;
 }
 
-.footer-position {
-  width: 264px;
-}
-
 .logo-down {
   color: var(--light-mode);
 }
@@ -938,17 +934,21 @@ img {
 
   .footer-container {
     margin: 0 auto;
-    padding: 0 16px;
     max-width: 428px;
   }
 
-  .all-footer {
+  .footer-position {
+    width: 264px;
   }
 }
 
 @media screen (min-width: 320px) and (max-width: 1157px) {
   .all-footer {
     flex-wrap: wrap;
+  }
+
+  .logo-part {
+    display: inline-block;
   }
 }
 

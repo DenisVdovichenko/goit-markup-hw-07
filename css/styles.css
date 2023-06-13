@@ -339,6 +339,27 @@ img {
     margin-bottom: 284px;
   }
 
+  .adress-call {
+    /* display: flex; */
+    /* flex-direction: column; */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+  }
+
+  .mob-mail {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+  }
+
   .container-mobile {
   }
 

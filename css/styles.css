@@ -360,10 +360,13 @@ img {
     letter-spacing: 0.02em;
   }
 
-  .container-mobile {
+  .mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
   }
 
-  .mobile-social {
+  .container-mobile {
   }
 
   .header-mobile-email {

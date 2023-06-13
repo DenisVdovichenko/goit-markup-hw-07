@@ -915,7 +915,7 @@ img {
 @media screen and (min-width: 320px) {
   .footer-container {
     margin: 0 auto;
-    max-width: 428px;
+    max-width: 396px;
   }
 
   .title-footer {
@@ -924,6 +924,10 @@ img {
 
   .footer-position {
     width: 264px;
+  }
+
+  .footer-lab {
+    max-width: 100%;
   }
 
   .all-footer {
@@ -939,6 +943,14 @@ img {
 
   .footer-text {
     text-align: left;
+  }
+
+  .form-footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 100%;
   }
 
   .foorm-footer-email {

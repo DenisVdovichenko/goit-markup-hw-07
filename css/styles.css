@@ -563,6 +563,7 @@ img {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11em;
+    margin-bottom: 8px;
   }
 
   .advantages-icon {
@@ -614,7 +615,7 @@ img {
     padding-bottom: 120px;
   }
 
-  .title-secondary {
+  .title-secondary.bolt {
     margin-bottom: 8px;
 
     font-weight: 500;

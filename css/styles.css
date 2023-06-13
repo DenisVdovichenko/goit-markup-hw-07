@@ -1048,14 +1048,6 @@ img {
   }
 }
 
-.footer-container {
-  border: 1px solid red;
-}
-
-.custom-list {
-  border: 1px solid green;
-}
-
 /* Modal style */
 
 .backdrop.is-hidden {

@@ -1289,10 +1289,11 @@ img {
     transition: transform var(--fast-anim);
     padding: 72px 24px 24px 24px;
 
-    max-height: 100vh;
+    /* max-height: 100vh; */
+    min-height: 796px;
     overflow-y: hidden;
     width: 100%;
-    z-index: var(--modal-ndx);
+    /* z-index: var(--modal-ndx); */
     background: var(--modal-background);
   }
 

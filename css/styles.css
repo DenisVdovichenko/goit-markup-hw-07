@@ -918,6 +918,10 @@ img {
     max-width: 396px;
   }
 
+  .form-footer {
+    width: 100%;
+  }
+
   .title-footer {
     text-align: center;
   }
@@ -927,7 +931,7 @@ img {
   }
 
   .footer-lab {
-    max-width: 100%;
+    margin-bottom: 16px;
   }
 
   .all-footer {
@@ -953,12 +957,8 @@ img {
     max-width: 100%;
   }
 
-  .foorm-footer-email {
-  }
-
   .footer-ipt {
-    max-width: 100%;
-    margin-bottom: 16px;
+    width: 100%;
   }
 }
 
@@ -974,7 +974,7 @@ img {
     gap: 24px;
   }
 
-  .footer-ipt {
+  .footer-lab {
     margin-bottom: 0;
   }
 

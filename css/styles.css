@@ -919,7 +919,7 @@ img {
     max-width: 396px;
   }
 
-  .form-footer {
+  .form-footer-email {
     width: 100%;
   }
 
@@ -932,6 +932,7 @@ img {
   }
 
   .footer-lab {
+    width: 100%;
     margin-bottom: 16px;
   }
 

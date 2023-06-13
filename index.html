@@ -61,11 +61,20 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn">
+        <button class="burger-menu-btn js-open-menu">
           <svg width="32" height="22">
             <use href="/images/icons.svg#icon-burger"></use>
           </svg>
         </button>
+      </div>
+      <div class="mobile-menu is-open js-menu-container">
+        <div class="container mobile-menu-container">
+          <button type="button" class="close-button js-close-menu">
+            <svg>
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <!-- Main section -->
@@ -554,15 +563,6 @@
           </div>
           <button type="submit" class="button send-button">Send</button>
         </form>
-      </div>
-      <div class="mobile-menu">
-        <div class="container mobile-menu container">
-          <button>
-            <svg>
-              <use href="./images/icons.svg#icon-Vector"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

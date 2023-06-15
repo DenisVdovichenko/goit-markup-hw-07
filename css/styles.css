@@ -443,19 +443,6 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.headline {
-  max-width: 496px;
-  justify-content: center;
-  margin-bottom: 48px;
-
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--primary-white-color);
-}
-
 .title {
   margin-bottom: 72px;
 
@@ -546,7 +533,6 @@ img {
 }
 
 /* HERO */
-
 .section-hd-color {
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -557,7 +543,6 @@ img {
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  padding: 188px 0;
 }
 
 /* 0-428px 2x */
@@ -618,6 +603,45 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office-desktop@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .section-hd-color {
+    padding: 112px 0;
+  }
+
+  .headline {
+    max-width: 496px;
+    margin-bottom: 72px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-white-color);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    margin-bottom: 36px;
+
+    font-size: 56px;
+    line-height: 1.07;
+    text-transform: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-hd-color {
+    padding: 188px 0;
+  }
+
+  .headline {
+    margin-bottom: 48px;
   }
 }
 

@@ -642,10 +642,6 @@ img {
   color: var(--pressed-state);
 }
 
-.center {
-  text-align: center;
-}
-
 .other-text {
   color: var(--primary-text-color);
 }
@@ -793,6 +789,14 @@ img {
 
 .decor-team-icon {
   fill: var(--light-mode);
+}
+
+.center {
+  text-align: center;
+}
+
+.profesion {
+  margin-bottom: 8px;
 }
 
 @media screen and (min-width: 320px) {

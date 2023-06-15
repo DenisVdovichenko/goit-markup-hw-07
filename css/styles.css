@@ -681,7 +681,7 @@ img {
 
   .group-list {
     display: flex;
-    gap: var(--indent);
+    gap: 72px;
     flex-wrap: wrap;
   }
 
@@ -698,6 +698,10 @@ img {
 
   .title-secondary.bolt {
     text-align: left;
+  }
+
+  .group-list {
+    gap: 72px 24px;
   }
 }
 

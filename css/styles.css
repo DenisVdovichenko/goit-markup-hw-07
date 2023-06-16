@@ -356,7 +356,7 @@ img {
     margin-bottom: 40px;
   }
 
-  .header-mobile-nav .header-mobile-nav.active {
+  .header-mobile-nav.header-mobile-nav.active {
     color: var(--pressed-state);
   }
 

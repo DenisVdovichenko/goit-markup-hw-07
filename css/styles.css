@@ -283,7 +283,7 @@ img {
     transition: transform var(--fast-anim);
     padding: 72px 24px 24px 24px;
 
-    overflow-y: hidden;
+    overflow: scroll;
     height: 100%;
     width: 100%;
     background: var(--modal-background);
@@ -1206,6 +1206,7 @@ img {
 
 .backdrop {
   position: fixed;
+  overflow: scroll;
   top: 0;
   left: 0;
   width: 100%;
@@ -1216,7 +1217,7 @@ img {
   transition: opacity var(--fast-anim), visibility var(--fast-anim);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) and (min-height: 320px) {
   .modal {
     position: absolute;
     top: 20px;
@@ -1233,9 +1234,6 @@ img {
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
   }
-}
-
-@media screen and (orientation: landscape) and (min-height: ) {
 }
 
 @media screen and (min-width: 768px) {

@@ -1175,24 +1175,20 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    max-width: 552px;
-    padding: 0;
+    max-width: 584px;
+    padding: 0 16px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .footer-container {
     max-width: 1158px;
+    padding: 0 15px;
   }
 
   .logo-part {
     margin-right: 120px;
     margin-bottom: 0px;
-  }
-
-  .footer-container {
-    display: flex;
-    max-width: 1128px;
   }
 
   .form-footer-email {
@@ -1220,21 +1216,35 @@ img {
   transition: opacity var(--fast-anim), visibility var(--fast-anim);
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform var(--fast-anim);
-  padding: 72px 24px 24px 24px;
+@media screen and (min-width: 320px) {
+  .modal {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%) scale(1);
+    transition: transform var(--fast-anim);
+    padding: 72px 24px 24px 24px;
 
-  width: 408px;
-  min-height: 576px;
-  z-index: var(--modal-ndx);
-  background: var(--modal-background);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+    width: 100%;
+    min-height: 576px;
+    z-index: var(--modal-ndx);
+    background: var(--modal-background);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-height: ) {
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+
+    width: 408px;
+  }
 }
 
 .modal-btn {
